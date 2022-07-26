@@ -1,0 +1,83 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-187bc73e.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/build/hooks.js"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-187bc73e.js"
+    ],
+    "css": [
+      "_app/immutable/assets/__layout-ecb2b684.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/svelte-logo-87df40b8.svg",
+      "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+      "_app/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
+      "_app/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+      "_app/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+      "_app/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+      "_app/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+      "_app/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-187bc73e.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-187bc73e.js"
+    ],
+    "css": [
+      "_app/immutable/assets/index-ab0783e4.css"
+    ]
+  },
+  "src/routes/tenants-onmount-table-not-working.svelte": {
+    "file": "entries/pages/tenants-onmount-table-not-working.svelte.js",
+    "src": "src/routes/tenants-onmount-table-not-working.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-187bc73e.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Table-b08e5460.css"
+    ]
+  },
+  "src/routes/tenants.svelte": {
+    "file": "entries/pages/tenants.svelte.js",
+    "src": "src/routes/tenants.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-187bc73e.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Table-b08e5460.css"
+    ]
+  },
+  "_index-187bc73e.js": {
+    "file": "_app/immutable/chunks/index-187bc73e.js"
+  },
+  ".svelte-kit/build/hooks.js": {
+    "file": "_app/immutable/chunks/hooks-bced8853.js",
+    "src": ".svelte-kit/build/hooks.js",
+    "isDynamicEntry": true
+  }
+}
