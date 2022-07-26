@@ -9,7 +9,8 @@ const config = {
             // crawl: false,
 			default: true,
             enabled: true,
-        }
+        },
+		trailingSlash: 'ignore'
 	}
 };
 

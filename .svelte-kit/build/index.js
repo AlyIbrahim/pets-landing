@@ -56,7 +56,7 @@ export class Server {
 			router: true,
 			template,
 			template_contains_nonce: false,
-			trailing_slash: "never"
+			trailing_slash: "ignore"
 		};
 	}
 
