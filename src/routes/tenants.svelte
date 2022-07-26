@@ -29,7 +29,7 @@
 	// const getTenants = async function() {
 	console.log('getTenants');
 	// const response = await fetch(tenant_service_url)
-	const response = fetch(tenant_service_url).then((data) => data.json());
+	const response = fetch('/tenant/').then((data) => data.json());
 	// .then((data) => {console.log(data); data.json()})
 	// console.log(response)
 	// tenants = (await response.json()).Items
