@@ -2,7 +2,7 @@
 	export let tenants;
 	// const tenant_service_url = `${import.meta.env.VITE_TENANT_SERVICE}`;
     const reg_service = `${import.meta.env.VITE_REGISTERATION_SERVICE}`
-	async function handleClick(name) {
+	async function handleClick(tenant) {
 		if (confirm('Are you sure you want to delete the tenant: ' + name + '?')) {
 			let response = fetch(reg_service, {
 				method: 'DELETE',
@@ -10,7 +10,9 @@
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify({
-					tenant: name,
+					tenant: tenant.tenant,
+					email: tenant.email,
+					base_domain:"kube.ab.tobealy.com",
 					action: 'delete-tenant',
 					status: 'Deleting'
 
@@ -37,7 +39,7 @@
 	</thead>
 	<tbody>
 		{#each Object.values(tenants) as row}
-			<tr on:click={handleClick(row.tenant)}>
+			<tr on:click={handleClick(row)}>
 				{#each Object.values(row) as cell}
 					<td>{cell}</td>
 				{/each}
