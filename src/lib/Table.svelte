@@ -1,22 +1,27 @@
 <script>
 	export let tenants;
-    const tenant_service_url = `${import.meta.env.VITE_TENANT_SERVICE}`
+	// const tenant_service_url = `${import.meta.env.VITE_TENANT_SERVICE}`;
+    const reg_service = `${import.meta.env.VITE_REGISTERATION_SERVICE}`
 	async function handleClick(name) {
-		alert('Are you sure you want to delete the tenant: ' + name + '?');
-		let response = fetch(tenant_service_url, {
-			method: 'DELETE',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				name
-			})
-		})
-        .then((data) => {tenants = tenants.filter(t => t.tenant != name) })
+		if (!confirm('Are you sure you want to delete the tenant: ' + name + '?')) {
+			let response = fetch(reg_service, {
+				method: 'DELETE',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					tenant: name,
+					action: 'delete-tenant',
+					status: 'Deleting'
 
+				})
+			}).then((data) => {
+				tenants = tenants.filter((t) => t.tenant != name);
+			});
+		}
 		// console.log(name);
 	}
-    // $: tenants = tenants
+	// $: tenants = tenants
 </script>
 
 <h1>Tenants</h1>
