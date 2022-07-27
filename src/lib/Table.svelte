@@ -3,7 +3,7 @@
 	// const tenant_service_url = `${import.meta.env.VITE_TENANT_SERVICE}`;
     const reg_service = `${import.meta.env.VITE_REGISTERATION_SERVICE}`
 	async function handleClick(name) {
-		if (!confirm('Are you sure you want to delete the tenant: ' + name + '?')) {
+		if (confirm('Are you sure you want to delete the tenant: ' + name + '?')) {
 			let response = fetch(reg_service, {
 				method: 'DELETE',
 				headers: {
