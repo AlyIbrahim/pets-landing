@@ -1,7 +1,7 @@
 import { c as create_ssr_component, o as onMount, f as each, e as escape } from "../../_app/immutable/chunks/index-187bc73e.js";
 /* empty css                                                                        */const Tenants_onmount_table_not_working = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let tenants = [];
-  const tenant_service_url = `${"http://localhost:8080/tenant/"}`;
+  const tenant_service_url = `${"/tenant/"}`;
   console.log(tenant_service_url);
   onMount(async () => {
     console.log("getTenants");

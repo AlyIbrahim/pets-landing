@@ -10,6 +10,8 @@ const InputForm = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let name = "";
   let email = "";
   let tier = "Free";
+  const reg_service = `${"/register/"}`;
+  console.log(reg_service);
   $$result.css.add(css);
   return `<div class="${"svelte-fl9noc"}"><label for="${"name"}" class="${"svelte-fl9noc"}">Name</label>
 <input type="${"text"}" id="${"name"}" name="${"name"}" placeholder="${"Aly"}" class="${"svelte-fl9noc"}"${add_attribute("value", name, 0)}>

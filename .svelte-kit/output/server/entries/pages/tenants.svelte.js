@@ -23,7 +23,7 @@ const Table = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 </table>`;
 });
 const Tenants = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  const tenant_service_url = `${"http://localhost:8080/tenant/"}`;
+  const tenant_service_url = `${"/tenant/"}`;
   console.log("getTenants");
   const response = fetch(tenant_service_url).then((data) => data.json());
   return `${function(__value) {
