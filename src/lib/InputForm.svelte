@@ -8,6 +8,7 @@
     let name = "";
     let email = "";
     let tier = "Free";
+    let version = "v1"
 
     const reg_service = `${import.meta.env.VITE_REGISTERATION_SERVICE}`
 
@@ -25,7 +26,10 @@
 				email,
 				tier,
 				base_domain:"kube.ab.tobealy.com",
-			    action: "deploy" }),
+			  action: "create-tenant",
+        status: "Registered",
+        version: version
+       }),
         })
 		console.log(response)
         // dispatch('newAnimal', {
@@ -44,6 +48,9 @@
 
 <label for="tier">Tier</label>
 <input type="text" id="tier" name="tier" bind:value={tier} placeholder="Free/Pro/Enterprise">
+
+<label for="version">Version</label>
+<input type="text" id="version" name="version" bind:value={version} placeholder="v1">
 
 <!-- <label for="base_domain">Age</label>
 <input type="text" id="base_domain" name="base_domain" bind:value={base_domain} placeholder="ab.tobealy.com"> -->
