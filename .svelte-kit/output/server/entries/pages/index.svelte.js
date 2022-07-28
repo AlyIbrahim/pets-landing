@@ -10,8 +10,7 @@ const InputForm = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let name = "";
   let email = "";
   let tier = "Free";
-  const reg_service = `${"/register/"}`;
-  console.log(reg_service);
+  let version = "v1";
   $$result.css.add(css);
   return `<div class="${"svelte-fl9noc"}"><label for="${"name"}" class="${"svelte-fl9noc"}">Name</label>
 <input type="${"text"}" id="${"name"}" name="${"name"}" placeholder="${"Aly"}" class="${"svelte-fl9noc"}"${add_attribute("value", name, 0)}>
@@ -21,6 +20,9 @@ const InputForm = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 
 <label for="${"tier"}" class="${"svelte-fl9noc"}">Tier</label>
 <input type="${"text"}" id="${"tier"}" name="${"tier"}" placeholder="${"Free/Pro/Enterprise"}" class="${"svelte-fl9noc"}"${add_attribute("value", tier, 0)}>
+
+<label for="${"version"}" class="${"svelte-fl9noc"}">Version</label>
+<input type="${"text"}" id="${"version"}" name="${"version"}" placeholder="${"v1"}" class="${"svelte-fl9noc"}"${add_attribute("value", version, 0)}>
 
 
 

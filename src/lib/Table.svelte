@@ -18,7 +18,7 @@
 
 				})
 			}).then((data) => {
-				tenants = tenants.filter((t) => t.tenant != name);
+				tenants = tenants.filter((t) => t.tenant != tenant.name);
 			});
 		}
 		// console.log(name);
