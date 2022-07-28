@@ -10,7 +10,7 @@ import InputForm from '$lib/InputForm.svelte'
 //     console.log(sw)
 // })
 
-onMount(async () => { handleSubscription})
+onMount(async () => { handleSubscription() })
 
 const handleSubscription = async () =>{
     let sw = await navigator.serviceWorker.ready
