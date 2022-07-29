@@ -14,12 +14,12 @@ export const build = [
 	"/_app/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
 	"/_app/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2",
 	"/_app/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff",
-	"/_app/immutable/start-b77aa8c1.js",
+	"/_app/immutable/start-0295aad2.js",
 	"/_app/immutable/pages/__layout.svelte-1bc33410.js",
 	"/_app/immutable/assets/__layout-f74aac7c.css",
 	"/_app/immutable/error.svelte-6f381749.js",
-	"/_app/immutable/pages/index.svelte-7182bd68.js",
-	"/_app/immutable/assets/index-d0d79c0d.css",
+	"/_app/immutable/pages/index.svelte-ff8d6ef1.js",
+	"/_app/immutable/assets/index-b02f9b73.css",
 	"/_app/immutable/pages/tenants-onmount-table-not-working.svelte-e5f8a845.js",
 	"/_app/immutable/assets/Table-5b9ecbec.css",
 	"/_app/immutable/pages/tenants.svelte-2b8f263b.js",
@@ -37,4 +37,4 @@ export const prerendered = [
 	"/tenants"
 ];
 
-export const version = "1659030424804";
+export const version = "1659108669166";
